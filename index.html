@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manoj Nahak - Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      body {
+        background: linear-gradient(135deg, #000428, #004e92);
+        color: #fff;
+      }
+      .navbar {
+        background-color: #001f3f !important;
+      }
+      .hero {
+        height: 100vh;
+        background: linear-gradient(135deg, #000428, #004e92);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+      .card {
+        background: linear-gradient(135deg, #16222a, #3a6073);
+        color: #fff;
+        border: none;
+      }
+      #skills,
+      #projects,
+      #contact,
+      #about #education {
+        background: #0f172a;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 30px;
+      }
+      .btn-custom {
+        background-color: #1e90ff;
+        color: white;
+        border: none;
+      }
+      .btn-custom:hover {
+        background-color: #00509e;
+      }
+      .navbar-toggler {
+        border: none;
+        outline: none;
+      }
+      .navbar-toggler-icon {
+        display: block;
+      }
+      .navbar-toggler.active .navbar-toggler-icon {
+        display: none;
+      }
+      .navbar-toggler.active::after {
+        content: "✖";
+        font-size: 1.5rem;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Manoj Nahak</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="hero text-center text-white d-flex align-items-center justify-content-center"
+    >
+      <div>
+        <h1 class="display-4">Hi, I'm Manoj Nahak</h1>
+        <p class="lead">MCA Graduate | Web Developer</p>
+      </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container py-5 text-center">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate web developer with experience in frontend and backend
+        technologies. I specialize in building dynamic and responsive websites,
+        ensuring an optimized user experience.
+      </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container py-5 text-center">
+      <h2>Education</h2>
+      <p><strong>MCA</strong> - KIIT University, Bhubaneswar (2022 - 2024)</p>
+      <p>
+        <strong>BCA</strong> - Berhampur University, Berhampur (2019 - 2022)
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container py-5 text-center">
+      <h2>My Skills</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h4><i class="fas fa-code"></i> Frontend</h4>
+          <ul class="list-unstyled">
+            <li>✔️ HTML</li>
+            <li>✔️ CSS</li>
+            <li>✔️ JavaScript</li>
+            <li>✔️ Bootstrap</li>
+            <li>✔️ Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4><i class="fas fa-server"></i> Backend</h4>
+          <ul class="list-unstyled">
+            <li>✔️ Java</li>
+            <li>✔️ Python</li>
+            <li>✔️ Node.js</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4><i class="fas fa-database"></i> Database</h4>
+          <ul class="list-unstyled">
+            <li>✔️ MySQL</li>
+            <li>✔️ Oracle</li>
+            <li>✔️ SQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container py-5 text-center">
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4 p-3">
+            <img src="pic2.png" class="img-fluid" alt="Flipkart Clone" />
+            <h5 class="card-title">EBooks</h5>
+            <p class="card-text">
+              A full-stack book marketplace for buying and selling new & used
+              books, with user authentication, order management, and an admin
+              panel.
+            </p>
+            <a
+              href="https://github.com/Manojnahak7/E_book"
+              class="btn btn-custom"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4 p-3">
+            <img src="pic1.png" class="img-fluid" alt="Netflix Clone" />
+            <h5 class="card-title">Wanderlust</h5>
+            <p class="card-text">
+              A full-stack travel booking platform where users can book hotels,
+              resorts, boats, and more, add their own listings, and manage
+              bookings with authentication, ratings, and reviews.
+            </p>
+            <a
+              href="https://github.com/Manojnahak7/Wanderlust"
+              class="btn btn-custom"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5 text-center">
+      <h2>Contact Me</h2>
+      <p>
+        Email:
+        <a href="mailto:mnahak185@gmail.com" style="color: #1e90ff"
+          >mnahak185@gmail.com</a
+        >
+      </p>
+      <p>
+        Phone:
+        <a href="tel:+916371804624" style="color: #1e90ff">+91 6371804624</a>
+      </p>
+      <p>
+        LinkedIn:
+        <a
+          href="https://linkedin.com/in/manojnahak"
+          target="_blank"
+          style="color: #1e90ff"
+          >linkedin.com/in/manojnahak</a
+        >
+      </p>
+      <p>
+        GitHub:
+        <a
+          href="https://github.com/Manojnahak7"
+          target="_blank"
+          style="color: #1e90ff"
+          >github.com/manojnahak</a
+        >
+      </p>
+    </section>
+
+    <script>
+      document
+        .getElementById("menuToggle")
+        .addEventListener("click", function () {
+          let navMenu = document.getElementById("navbarNav");
+          let menuIcon = document.getElementById("menuIcon");
+
+          if (navMenu.classList.contains("show")) {
+            navMenu.classList.remove("show"); // Hide menu
+            menuIcon.classList.remove("fa-times"); // Change X to bars
+            menuIcon.classList.add("fa-bars");
+          } else {
+            navMenu.classList.add("show"); // Show menu
+            menuIcon.classList.remove("fa-bars"); // Change bars to X
+            menuIcon.classList.add("fa-times");
+          }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
